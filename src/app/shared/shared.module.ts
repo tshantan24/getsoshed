@@ -6,8 +6,12 @@ import { HttpClientModule } from '@angular/common/http';
 // Services
 import { BaseService } from './services/base.service';
 
+//Components
+import { NavbarComponent } from './components/navbar/navbar.component';
+
 @NgModule({
   declarations: [
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +21,7 @@ import { BaseService } from './services/base.service';
   providers: [BaseService],
   bootstrap: [],
   exports: [
+    NavbarComponent
   ]
 })
 export class SharedModule { }
