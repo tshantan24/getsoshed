@@ -1,0 +1,24 @@
+{
+    "routes": [
+        {
+            "route": "/",
+            "page": "Home",
+            "show": true
+        },
+        {
+            "route": "/about",
+            "page": "About",
+            "show": true
+        },
+        {
+            "route": "/portfolio",
+            "page": "Portfolio",
+            "show": false
+        },
+        {
+            "route": "/contact",
+            "page": "Contact",
+            "show": true
+        }
+    ]
+}
