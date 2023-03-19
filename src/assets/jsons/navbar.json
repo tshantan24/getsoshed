@@ -1,0 +1,24 @@
+{
+    "routes": [
+        {
+            "path": "/",
+            "page": "Home",
+            "isVisible": true
+        },
+        {
+            "path": "/about",
+            "page": "About",
+            "isVisible": true
+        },
+        {
+            "path": "/portfolio",
+            "page": "Portfolio",
+            "isVisible": false
+        },
+        {
+            "path": "/contact",
+            "page": "Contact",
+            "isVisible": true
+        }
+    ]
+}
