@@ -24,10 +24,13 @@
       "dom"
     ],
     "paths": {
-      "@shared/services": ["app/shared/services"],
-      "@shared/components": ["app/shared/components"],
-      "@assets": ["assets/"]
-    }
+      "@shared/services": ["app/shared/services/*"],
+      "@shared/components": ["app/shared/components/*"],
+      "@models": ["src/app/data/models/*"],
+      "@assets": ["assets/*"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

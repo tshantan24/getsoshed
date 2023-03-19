@@ -5,19 +5,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
-            <a class="navbar-brand me-30">
+            <a class="navbar-brand" (click)="onLogoClick()">
                 <img width="150" [src]="logoUrl" [title]="logoTitle" />
             </a>
             <ul class="nav navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Disabled</a>
-                </li>
+                <ng-container *ngFor="let route of routes" >
+                    <li class="nav-item mx-1" *ngIf="route.isVisible" [routerLink]="route.path" >
+                        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ route.page }}</a>
+                    </li>
+                </ng-container>
             </ul>
         </div>
     </div>
